@@ -1,2 +1,8 @@
 """ Leith
 """
+user_name = input("Enter your name: ")
+while not user_name:
+    user_name = input("Enter your name: ")
+else:
+    for i in user_name[::2]:
+        print(i, end=" ")
